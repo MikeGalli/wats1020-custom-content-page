@@ -4,7 +4,6 @@
    Author's custom styles
    ========================================================================== */
    body {
-   	background: url(plus_ultra_timeline_v15.jpg);
    	background-size: cover;
    	background-repeat: no-repeat;
    }
@@ -31,10 +30,11 @@
    .affix {
        top: 0;
        width: 100%;
+       z-index: 999;
    }
 
    .affix + .container-fluid {
-       padding-top: 70px;
+       padding-top: 10px;
    }
    .header-buttons {		/* part of .main.supporting */
    	align-self: flex-end;
