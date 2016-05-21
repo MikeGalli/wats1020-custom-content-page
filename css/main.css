@@ -24,7 +24,14 @@
    @media (max-width: 600px) {
    .page-wrapper {padding:0px!important;}}
 
+   .affix {
+       top: 0;
+       width: 100%;
+   }
 
+   .affix + .container-fluid {
+       padding-top: 70px;
+   }
    .header-buttons {		/* part of .main.supporting */
    	align-self: flex-end;
    	order: 4;
