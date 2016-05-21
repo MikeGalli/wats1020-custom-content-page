@@ -34,7 +34,7 @@
    }
 
    .affix + .container-fluid {
-       padding-top: 10px;
+       padding-top: 1px;
    }
    .header-buttons {		/* part of .main.supporting */
    	align-self: flex-end;
