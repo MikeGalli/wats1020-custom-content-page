@@ -24,6 +24,10 @@
    @media (max-width: 600px) {
    .page-wrapper {padding:0px!important;}}
 
+   .page-wrapper {
+     background-size: cover;
+   }
+
    .affix {
        top: 0;
        width: 100%;
