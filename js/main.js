@@ -21,41 +21,9 @@ Make a custom method.
 
 
 $(document).on('ready', function(){
-
-  $.validator.methods.NoNum = function( value, element ) {      //Step 1) Custom Method
-    return this.optional( element ) || /[^0-9]/.test( value );
-  }
-
-  jQuery.extend(jQuery.validator.messages, {
-      NoNum: "Please don't use numbers for names"                //Step 2) error message.
+  $('#head-but').affix({
   });
 
 
-  $('#order-form').validate({
-      submitHandler: function(X) {
-          // If form is valid, submit it!
-          X.submit();
-      },
-      onfocusout: function(element) {
-        $(element).valid();
-      },
-      rules: {
-          "your-name": {
-              required: true,
-              maxlength: 2,
-              NoNum: true                 //Step 3) Setting the method to true, means do the validation here, on this object
 
-          },
-          "div.form-group .required": {
-            required: true
-          },
-          "your-state": {
-              required: true,
-              maxlength: 3
-          }
-
-
-
-        }
-    });
 });
