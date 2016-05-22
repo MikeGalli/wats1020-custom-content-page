@@ -29,6 +29,7 @@
    }
 
    .affix {
+       background-color: rgba(154, 171, 241, 0.3);
        top: 0;
        width: 100%;
        z-index: 999;
