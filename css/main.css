@@ -184,7 +184,10 @@ div#masonry:hover img:hover {
 	opacity: 1;
 }
 
-
+@media screen and (max-width: 500px) {
+ div#masonry { height: 200vw; }
+ div#masonry img { width: 50%; }
+}
 
 .valid {
   color: blue;
