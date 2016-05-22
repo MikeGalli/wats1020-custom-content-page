@@ -24,7 +24,7 @@
    	div#masonry img { width: 50%; }
    }
 
-   @media (max-width: 60px) {
+   @media (max-width: 600px) {
    .page-wrapper {padding:0px!important;}
     }
 
