@@ -154,7 +154,9 @@
                    text-shadow: rgba(0, 0, 0, 0.4) 0 -1px, rgba(255, 255, 255, 0.3) 0 1px;
                    color:rgba(255, 255, 255, 0.9);
    }
-
+.masonryContaner {
+  width: 70%;
+}
   div#masonry {
 	display: -ms-flexbox;
 	-ms-flex-direction: column;
