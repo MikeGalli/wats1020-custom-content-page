@@ -19,10 +19,11 @@
    	width: 100%;
    }
 
-
+/*
    @media (max-width: 60px) {
-   .page-wrapper {padding:0px!important;}}
-
+   .page-wrapper {padding:0px!important;}
+    }
+*/
    .page-wrapper {
      background-color: rgba(27, 22, 60, 0.97);
    }
