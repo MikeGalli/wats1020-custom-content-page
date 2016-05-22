@@ -28,15 +28,16 @@
      background-color: rgba(27, 22, 60, 0.97);
    }
 
-   #button-spy.affix {
+   .affix {
        top: 0;
        width: 100%;
-       position: fixed;
+       z-index: 999;
    }
 
    .affix + .container-fluid {
-       padding-top: 1px;
+       padding-top: 10px;
    }
+
    .header-buttons {		/* part of .main.supporting */
    	align-self: flex-end;
    	order: 4;
