@@ -156,7 +156,7 @@
                    color:rgba(255, 255, 255, 0.9);
    }
 .masonryContaner {
-  width: 50%;
+  width: 80%;
 }
   div#masonry {
 	display: -ms-flexbox;
