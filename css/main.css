@@ -27,6 +27,8 @@
      background-color: rgba(27, 22, 60, 0.97);
    }
 */
+.page-wrapper {
+  background-color: rgba(27, 22, 60, 0.97);
    .affix {
        top: 0;
        width: 100%;
