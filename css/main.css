@@ -28,7 +28,7 @@
      background-color: rgba(27, 22, 60, 0.97);
    }
 
-   #head-but.affix {
+   #button-spy.affix {
        top: 0;
        width: 100%;
        position: fixed;
