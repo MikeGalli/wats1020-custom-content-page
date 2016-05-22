@@ -28,9 +28,10 @@
      background-color: rgba(27, 22, 60, 0.97);
    }
 
-   .affix {
+   #head-but .affix {
        top: 0;
        width: 100%;
+       position: fixed;
        z-index: 999;
    }
 
