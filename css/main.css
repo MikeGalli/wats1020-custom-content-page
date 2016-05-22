@@ -13,11 +13,11 @@
    	margin: 0;
    	position: relative;
    }
-   /* Intro  Intro  Intro  Intro  Intro  Intro */
-   .intro { /*part of intro*/
+   /* Intro  Intro  Intro  Intro  Intro  Intro
+   .intro { part of intro
    	background-color: rgba(154, 171, 241, 0.3);
    	width: 100%;
-   }
+   }*/
 
 /*
    @media (max-width: 600px) {
@@ -186,9 +186,4 @@ div#masonry:hover img:hover {
 @media screen and (max-width: 500px) {
  div#masonry { height: 400vw; }
  div#masonry img { width: 50%; }
-}
-
-
-.valid {
-  color: blue;
 }
