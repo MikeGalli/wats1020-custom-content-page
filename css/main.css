@@ -13,8 +13,8 @@
    	margin: 0;
    	position: relative;
    }
-    Intro  Intro  Intro  Intro  Intro  Intro
-   .intro { part of intro
+   /* Intro  Intro  Intro  Intro  Intro  Intro */
+   .intro { /*part of intro*/
    	background-color: rgba(154, 171, 241, 0.3);
    	width: 100%;
    }
