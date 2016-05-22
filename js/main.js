@@ -21,7 +21,7 @@ Make a custom method.
 
 
 $(document).on('ready', function(){
-  $('#head-but').affix({
+  $('#button-spy').affix({
   });
 
 
