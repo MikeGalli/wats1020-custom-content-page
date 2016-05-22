@@ -169,7 +169,7 @@
 }
 div#masonry img {
   column-count: 4;
-	width: 33.3%;
+	/*width: 33.3%;*/
 	transition: .8s opacity;
 }
 div#masonry:hover img {
