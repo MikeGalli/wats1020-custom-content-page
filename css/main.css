@@ -159,7 +159,6 @@
 }
   div#masonry {
 	display: -ms-flexbox;
-  column-count: 4;
 	-ms-flex-direction: column;
 	-ms-flex-wrap: wrap;
 	display: flex;
@@ -169,8 +168,7 @@
 	font-size: 0;
 }
 div#masonry img {
-  display: inline-block;
-	/*width: 33.3%;*/
+	width: 33.3%;
 	transition: .8s opacity;
 }
 div#masonry:hover img {
