@@ -157,6 +157,7 @@
    }
 .masonryContaner {
   width: 90%;
+  margin: auto;
 }
   div#masonry {
     margin: auto;
