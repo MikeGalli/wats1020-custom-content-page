@@ -159,14 +159,15 @@
   width: 90%;
 }
   div#masonry {
+    margin: auto;
 	display: -ms-flexbox;
 	-ms-flex-direction: column;
 	-ms-flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 150vw;       /*100vw;*/
-	font-size: 0;
+	height: 150vw;       /*Height must be enough to fit all images. Or columns will flow right & off the page.*/
+	font-size: 0;        /*Need a variable height solution. When I add pics to flicker, web should auto adjust.*/
 }
 div#masonry img {
 	width: 33.3%;
