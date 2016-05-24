@@ -30,6 +30,13 @@ $(document).on('ready', function(){
   };
 
 
+  $('button.search').on('click', function(event){
+    event.preventDefault();
+    var searchTextInput = $(event.target.parentElement).find('input[name="searchText"]')[0];
+    console.log(searchTextInput);
+    searchImages(searchTextInput.value);
+  });
+
 
 
 
