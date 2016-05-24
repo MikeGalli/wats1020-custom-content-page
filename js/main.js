@@ -20,7 +20,7 @@ $(document).on('ready', function(){
         //var newTitle = $('<p class="image-title">').html(item.title).appendTo(newListItem);
         //var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
         //var newDescription = $('<p class="image-description">').html(item.description).appendTo(newListItem);
-        //var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
+        var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
 
         newListItem.appendTo( "#images" );
         if ( i === 15 ) {
