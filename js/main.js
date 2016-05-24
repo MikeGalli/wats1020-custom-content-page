@@ -1,28 +1,37 @@
-/* Custom JS goes here. */
-
-// For this assignment you'll need to do a few things:
-// 1. Create a document ready handler.
-// 2. Define a validation object for use on your page.
-// 3. Connect the validation object to an event handler tied to the submit button.
-
-// Refer to the `index.html` file for the validation rules that must be enforced.
-
-
-///Find add method example     jQuery.validator.addMethod( name, method [, message ] )
-
-/*
-If jQuery doesn't have a method to accomplish the validation you need...
-Make a custom method.
-  Step 1)  Make a new validator method called "NoNum"
-  Step 2)  Create a message for the new method, "NoNum" (to be shown incase of invalid entry).
-  Step 3)  Call for the method in the rules.
-              Numbers are not allowed in the Name field, so, we'll call for the NoNum method there.
-*/
-
-
 $(document).on('ready', function(){
   $('#button-spy').affix({
   });
+
+  var searchImages = function(tags) {
+    var flickrAPI = "http://api.flickr.com/services/feeds/photos/141199663@N04/albums/72157668420144852.gne?jsoncallback=?";
+    https://www.flickr.com/photos/141199663@N04/albums/72157668420144852
+    console.log(tags) + "tags";
+    $('#images').innerHTML = '<li class="search-throbber">Searching...</li>';
+    $.getJSON( flickrAPI, {
+      tags: tags,
+      tagmode: "any",
+      format: "json"
+    }).done(function( data ) {
+      $('#images').empty();
+      $('h1.search-title').first()[0].innerHTML = "Search for: " + tags;
+      $.each( data.items, function( i, item ) {
+        var newListItem = $("<li>")
+        // If you're not doing the modal, then show info about the image.
+        var newTitle = $('<p class="image-title">').html(item.title).appendTo(newListItem);
+        var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
+        var newDescription = $('<p class="image-description">').html(item.description).appendTo(newListItem);
+        var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
+
+        newListItem.appendTo( "#images" );
+        if ( i === 15 ) {
+          return false;
+        }
+      });
+    });
+  };
+
+
+
 
 
 
