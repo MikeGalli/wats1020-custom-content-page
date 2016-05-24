@@ -17,9 +17,9 @@ $(document).on('ready', function(){
       $.each( data.items, function( i, item ) {
         var newListItem = $("<li> .placeholder")
         // If you're not doing the modal, then show info about the image.
-        //var newTitle = $('<p class="image-title">').html(item.title).appendTo(newListItem);
-        //var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
-        //var newDescription = $('<p class="image-description">').html(item.description).appendTo(newListItem);
+        var newTitle = $('<p class="image-title">').html(item.title).appendTo(newListItem);
+        var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
+        var newDescription = $('<p class="image-description">').html(item.description).appendTo(newListItem);
         var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
 
         newListItem.appendTo( "#images" );
