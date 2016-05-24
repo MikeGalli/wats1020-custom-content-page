@@ -3,7 +3,8 @@ $(document).on('ready', function(){
   });
 
   var searchImages = function(tags) {
-    var flickrAPI = "http://api.flickr.com/services/feeds/photos/141199663@N04/albums/72157668420144852.gne?jsoncallback=?";
+    var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    //var flickrAPI = "http://api.flickr.com/services/feeds/photos/141199663@N04/albums/72157668420144852.gne?jsoncallback=?";
     console.log(tags) + "tags";
     $('#images').innerHTML = '<li class="search-throbber">Searching...</li>';
     $.getJSON( flickrAPI, {
