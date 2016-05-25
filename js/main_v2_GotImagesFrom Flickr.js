@@ -14,7 +14,7 @@ $(document).on('ready', function(){
 
         console.log("received data");
         $.each( data.photoset.photo, function( i, item ) {
-          var newListItem = $("#masonry");
+          var newListItem = $("<li>");
           console.log(data);
           //var newTitle = $('<p class="image-title">').html(item.title).appendTo(newListItem);
           //var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
@@ -23,7 +23,7 @@ $(document).on('ready', function(){
           var newDescription = $(' <img src="' + item.url_m+'">').appendTo(newListItem);
           //var newDescription = $(url_m).html(photo.title).appendTo(newListItem);
           //var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
-          newListItem.appendTo("#masonry");
+          newListItem.appendTo("#images");
           //if ( i === 15 ) {
         //    return false;
         //};
