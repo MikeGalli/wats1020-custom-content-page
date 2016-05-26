@@ -18,7 +18,10 @@
    	background-color: rgba(154, 171, 241, 0.3);
    	width: 100%;
    }
-
+   .navbar {
+    background-color: rgba(154, 171, 241, 0.3);
+    width: 100%;
+   }
 /*
    @media (max-width: 600px) {
    .page-wrapper {padding:0px!important;}
