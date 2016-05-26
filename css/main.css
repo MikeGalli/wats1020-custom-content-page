@@ -28,7 +28,7 @@
      background-color: rgba(27, 22, 60, 0.97);
    }
 
-   #button-spy + .affix {
+   .sidebar + .affix {
        top: 1px;
        width: 100%;
        z-index: 999;
@@ -97,7 +97,7 @@
 
 
                    /* a very subtle drop-shadow that ehances the pressed button effect */
-                    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
+                   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
                    -moz-box-shadow:    1px 1px 3px rgba(0, 0, 0, 0.30);
                    box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.30);
 
@@ -110,7 +110,7 @@
 
                    /* and of course a little animated background-color fade effect */
 
-                    -webkit-transition: background-color 0.3s ease;
+                   -webkit-transition: background-color 0.3s ease;
                    -moz-transition: background-color 0.3s ease;
                    -o-transition: background-color 0.3s ease;
                    -ms-transition: background-color 0.3s ease;
@@ -156,6 +156,30 @@
                    color:rgba(255, 255, 255, 0.9);
    }
 
+   /* sidebar  sidebar  sidebar  sidebar  sidebar  sidebar */
+   .sidebar:hover {
+   	width: 90px;
+   }
+   .select:before {
+   	content: "Samples here";
+   	width: 90px;
+   	/* 	margin-left: 12rem; */
+   	position: absolute;
+   	right: 1rem;
+   }
+   .sidebar {
+   	background: clear;
+   	/*position: fixed;*/
+   	/*top: 10%;*/
+   	left: .5%;
+   	width: 50px;
+   	transition: 3s width;
+   	transition-property: width;
+   	transition-duration: 3s;
+   	transition-timing-function: initial;
+   	transition-delay: initial;
+   }
+   /* sidebar  sidebar  sidebar  sidebar  sidebar  sidebar */
 
 
    ul#images li {
