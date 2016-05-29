@@ -203,17 +203,11 @@
    	 font-weight: normal;
      color: rgba(226, 165, 8, 1);
    }
-/*   @media (max-width : 500px){
-     ul {
-                    font-family: helvetica, arial, sans-serif;
-                     font-size:9px;
-   }
 
-   @media (min-width : 700px){
-     .sidebar {
-                    font-family: helvetica, arial, sans-serif;
-                     font-size:14px;
-   }
+/*
+@media screen and (max-width: 500px) {
+     div#sidebar { font-size: 5px; }
+    }
 */
    .sidebar:hover {
    	width: 20%;
@@ -245,13 +239,14 @@
   width: 90%;
 }
   div#masonry {
+  gutter: 10;
 	display: -ms-flexbox;
 	-ms-flex-direction: column;
 	-ms-flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 250vw;       /*Height must be enough to fit all images. Or columns will flow right & off the page.*/
+	height: 360vw;       /*Height must be enough to fit all images. Or columns will flow right & off the page.*/
 	font-size: 0;        /*Need a variable height solution. When I add pics to flicker, web should auto adjust.*/
 }
 div#masonry img {
@@ -267,5 +262,5 @@ div#masonry:hover img:hover {
 
 @media screen and (max-width: 500px) {
  div#masonry { height: 500vw; }
- div#masonry img { width: 50%; }
+ div#masonry img { width: 47%; }
 }
