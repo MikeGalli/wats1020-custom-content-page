@@ -9,13 +9,6 @@
    	src: url('SelznickRemixNF.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */  url('SelznickRemixNF.woff2') format('woff2'), /* Super Modern Browsers */  url('SelznickRemixNF.woff') format('woff'), /* Pretty Modern Browsers */  url('SelznickRemixNF.ttf') format('truetype'), /* Safari, Android, iOS */  url('SelznickRemixNF.svg#SelznickRemixNF') format('svg'); /* Legacy iOS */
    }
 
-   h1 {
-     text-align: center;
-     font-family: 'MyWebFont', Fallback, sans-serif;
-   	 font-weight: normal;
-     color: rgba(226, 165, 8, 1);
-   }
-
    body {
    	background-size: cover;
    	background-repeat: no-repeat;
@@ -35,7 +28,8 @@
    	position: relative;
     background-color: rgba(27, 22, 60, 0.97);
    }
-   .intro {
+   /* Intro  Intro  Intro  Intro  Intro  Intro */
+   .intro { /*part of intro*/
    	background-color: rgba(154, 171, 241, 0.2);
    	width: 100%;
     position: absolute;
@@ -45,13 +39,13 @@
    }
 
    /*  Start NEW Nav Buttons  */
-      .container-fluid {
+      .container-fluid {		/* part of .main.supporting */
       	align-self: flex-end;
       	order: 4;
       	margin: auto;
       /* 	background-color: lightskyblue; */
       }
-      .container-fluid a{
+      .container-fluid a{		/* part of .main.supporting */
       	              font-family: helvetica, arial, sans-serif;
                       font-size:14px;
                       letter-spacing: 1px;
@@ -164,9 +158,36 @@
       }
       /*  End NEW Nav Buttons  */
 
+
+
+  /* .navbar {
+    background-color: rgba(154, 171, 241, 0.3);
+    width: 30%;
+   }
+   .navbar-default {
+     padding: 0px;
+   }*/
+
+
    @media (max-width: 600px) {
    .page-wrapper {padding:0px!important;}
     }
+
+
+
+
+
+
+
+   .sidebar + .affix {
+       top: 1px;
+       width: 100%;
+       z-index: 999;
+   }
+
+   .affix + .container-fluid {
+       padding-top: 5px;
+   }
 
 
    /* sidebar  sidebar  sidebar  sidebar  sidebar  sidebar*/
@@ -176,7 +197,22 @@
      margin: 0;
      padding: 0;
    }
+   h1 {
+     text-align: center;
+     font-family: 'MyWebFont', Fallback, sans-serif;
+   	 font-weight: normal;
+     color: rgba(226, 165, 8, 1);
+   }
 
+/*
+@media screen and (max-width: 500px) {
+     div#sidebar { font-size: 5px; }
+    }
+
+   .sidebar:hover {
+   	width: 20%;
+   }
+*/
    .sidebar {
    	/*background: rgba(128, 83, 213, 0.7);*/
    	position: fixed;
