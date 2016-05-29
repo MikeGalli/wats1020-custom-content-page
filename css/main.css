@@ -208,11 +208,11 @@
 @media screen and (max-width: 500px) {
      div#sidebar { font-size: 5px; }
     }
-*/
+
    .sidebar:hover {
    	width: 20%;
    }
-
+*/
    .sidebar {
    	/*background: rgba(128, 83, 213, 0.7);*/
    	position: fixed;
@@ -239,14 +239,13 @@
   width: 90%;
 }
   div#masonry {
-  gutter: 10;
 	display: -ms-flexbox;
 	-ms-flex-direction: column;
 	-ms-flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 360vw;       /*Height must be enough to fit all images. Or columns will flow right & off the page.*/
+	height: 270vw;       /*Height must be enough to fit all images. Or columns will flow right & off the page.*/
 	font-size: 0;        /*Need a variable height solution. When I add pics to flicker, web should auto adjust.*/
 }
 div#masonry img {
@@ -262,5 +261,6 @@ div#masonry:hover img:hover {
 
 @media screen and (max-width: 500px) {
  div#masonry { height: 500vw; }
- div#masonry img { width: 47%; }
+ div#masonry img { width: 50%; }
+ div#masonry { height: 550vw; }
 }
