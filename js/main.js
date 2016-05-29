@@ -1,7 +1,6 @@
 $(document).on('ready', function(){
-  $('#button-spy').affix({
-  });
-  //$(".button_container").css('width, 20')
+
+  $(".button_container").css('width, 20')
 
   	jQuery('#a-link').remove();
   	jQuery('<img alt="" />').attr('id', 'loader').attr('src', 'ajax-loader.gif').appendTo('#image-container');
