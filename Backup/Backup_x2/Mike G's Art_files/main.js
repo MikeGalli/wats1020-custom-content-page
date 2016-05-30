@@ -22,6 +22,8 @@ $(document).on('ready', function(){
           //var newDescription = $(url_m).html(photo.title).appendTo(newListItem);
           //var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
           newListItem.appendTo("#masonry");
-         });
+
+        });
+
       });
 });
