@@ -24,5 +24,6 @@ $(document).on('ready', function(){
           newListItem.appendTo("#masonry");
 
         });
+
       });
 });
