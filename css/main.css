@@ -278,6 +278,11 @@ div#masonry:hover img:hover {
 	opacity: 1;
 }
 
+div#masonry:active img:active {
+	opacity: 1;
+  width: 60%;
+}
+
 @media screen and (max-width: 500px) {
  div#masonry { height: 500vw; }
  div#masonry img { width: 50%; }
