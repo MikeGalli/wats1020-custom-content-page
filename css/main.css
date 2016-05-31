@@ -1,4 +1,21 @@
 
+/*Use media query vs vw or vh
+read which is easier and which is more stable.
+
+@media (max-width: 600px) {   This is media query..
+.page-wrapper {padding:0px!important;}
+ }
+ h1 {
+   text-align: center;
+   font-family: 'MyWebFont', Fallback, sans-serif;
+   font-weight: normal;
+   font-size: 6vw;   or 6rem  ****************
+   color: rgba(226, 165, 8, 1);
+ }
+
+*/
+
+
    @font-face {
    	font-family: 'MyWebFont';
    	src: url('SelznickRemixNF.eot'); /* IE9 Compat Modes */
@@ -86,8 +103,8 @@
    h1 {
      text-align: center;
      font-family: 'MyWebFont', Fallback, sans-serif;
-   	 font-weight: bold;
-     font-size: 6vw;
+   	 font-weight: normal;
+     font-size: 6rem;
      color: rgba(226, 165, 8, 1);
    }
 
