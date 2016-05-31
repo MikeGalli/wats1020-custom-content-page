@@ -1,8 +1,4 @@
 
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
    @font-face {
    	font-family: 'MyWebFont';
    	src: url('SelznickRemixNF.eot'); /* IE9 Compat Modes */
@@ -131,7 +127,7 @@
    /*  Start NEW Nav Buttons  */
       .container-fluid {
       	align-self: flex-end;
-      	order: 4;
+      	order: 5;
       	margin: auto;
       /* 	background-color: lightskyblue; */
       }

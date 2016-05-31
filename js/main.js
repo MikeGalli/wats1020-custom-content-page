@@ -23,5 +23,11 @@ $(document).on('ready', function(){
           //var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
           newListItem.appendTo("#masonry");
          });
+         $('.hi').on('click', function(){
+           alert("Thank you for comming to see my art!");
+         });
       });
+
+
+
 });
